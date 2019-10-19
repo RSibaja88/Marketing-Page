@@ -168,8 +168,15 @@ p {
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
 }
-.navBar .logoFull {
-  width: 60%;
-  height: 60%;
+.navBar .logoText {
+  width: 70%;
+  height: 70%;
+  border: solid 2px red;
+}
+.mainImg {
+  width: 80%;
+  height: 80%;
 }
