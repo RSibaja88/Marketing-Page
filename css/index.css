@@ -1,3 +1,4 @@
+/* offset-x | offset-y | blur-radius | color */
 .CTA-button {
   font-family: 'Big Shoulders Text', cursive;
   font-size: 2.5rem;
@@ -5,7 +6,6 @@
   padding: 1%;
   background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
   box-shadow: -7px 7px 5px #b5c6d1;
-  /* offset-x | offset-y | blur-radius | color */
   border-radius: 25px;
 }
 .CTA-button a {
@@ -15,6 +15,12 @@
 }
 .CTA-button a:hover {
   color: #001847;
+}
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -171,11 +177,13 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 3.5rem;
+  font-size: 1.85rem;
   line-height: 1.4;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #001847;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(to bottom left, #ffffff, #b5c6d1, #ffffff);
@@ -192,7 +200,6 @@ p {
   padding: 1%;
   background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
   box-shadow: -7px 7px 5px #b5c6d1;
-  /* offset-x | offset-y | blur-radius | color */
   border-radius: 25px;
 }
 .logInButton a {
@@ -218,7 +225,8 @@ p {
   height: 70%;
 }
 .navBar .pageLinks {
-  padding-top: 2%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   width: 100%;
   font-size: 3rem;
   display: flex;
@@ -232,8 +240,27 @@ p {
 .navBar .pageLinks a:hover {
   color: #001847;
 }
+.footer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .storeLinks {
+  justify-content: center;
+  border: solid 2px darkcyan;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer p {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .mainImg {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -242,4 +269,35 @@ p {
   align-items: center;
   width: 80%;
   height: 80%;
+  border-radius: 15px;
+}
+.bottomPanel {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  justify-content: space-evenly;
+}
+.bottomPanel .textBoxHeader {
+  width: 45%;
+  font-size: 1rem;
+  background-color: #ffff;
+  border-radius: 15px;
+  box-shadow: 7px 7px 5px #b5c6d1;
+  padding-left: 1%;
+  padding-right: 1%;
+  justify-content: left;
+}
+.bottomPanel .textBoxHeader .panelHead {
+  background-color: #fffa02;
+  color: #0045f4;
+  box-shadow: -7px 7px 5px #b5c6d1;
+  text-align: center;
+  border-radius: 15px;
+  padding: 2%;
+}
+.bottomPanel .sideYoga {
+  border-radius: 15px;
 }

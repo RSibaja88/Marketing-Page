@@ -1,0 +1,43 @@
+/* offset-x | offset-y | blur-radius | color */
+.CTA-button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  border-radius: 25px;
+}
+.CTA-button a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.CTA-button a:hover {
+  color: #001847;
+}
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .storeLinks {
+  justify-content: center;
+  border: solid 2px darkcyan;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer p {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

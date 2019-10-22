@@ -16,6 +16,12 @@
 .CTA-button a:hover {
   color: #001847;
 }
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 * {
   box-sizing: border-box;
 }
@@ -47,7 +53,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(to bottom left, #ffffff, #b5c6d1, #ffffff);
@@ -90,7 +96,8 @@ p {
   height: 70%;
 }
 .navBar .pageLinks {
-  padding-top: 2%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   width: 100%;
   font-size: 3rem;
   display: flex;
