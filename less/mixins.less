@@ -5,8 +5,28 @@
     flex-direction: column;
 }
 
-.flexRowCent(@flex: flex; @row: row; @center: center;){
+.flexRow(@flex: flex; @row: row;){
 	display: @flex;
-    flex-direction: @row;
-    align-items: @center;	
+    flex-direction: @row;	
+}
+
+.CTA-button {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.5rem;
+    width: 15%;
+    padding: 1%;
+    background-image: linear-gradient(to bottom right, @yellow , #ffffff);
+    box-shadow: -7px 7px 5px @gray; /* offset-x | offset-y | blur-radius | color */
+    border-radius: 25px;
+
+    a{
+        text-decoration: none;
+        color: @brightBlue;
+        text-align: center;
+        
+
+        &:hover{
+            color: @darkBlue;
+        }
+    }
 }

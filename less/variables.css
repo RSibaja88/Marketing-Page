@@ -1,0 +1,18 @@
+.CTA-button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 10px 5px gray;
+  /* offset-x | offset-y | blur-radius | color */
+  border-radius: 25px;
+}
+.CTA-button a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.CTA-button a:hover {
+  color: #001847;
+}

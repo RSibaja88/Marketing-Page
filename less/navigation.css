@@ -1,3 +1,21 @@
+.CTA-button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  /* offset-x | offset-y | blur-radius | color */
+  border-radius: 25px;
+}
+.CTA-button a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.CTA-button a:hover {
+  color: #001847;
+}
 * {
   box-sizing: border-box;
 }
@@ -34,6 +52,29 @@ p {
   margin: 0 auto;
   background-image: linear-gradient(to bottom left, #ffffff, #b5c6d1, #ffffff);
 }
+.logInButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80%;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  /* offset-x | offset-y | blur-radius | color */
+  border-radius: 25px;
+}
+.logInButton a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.logInButton a:hover {
+  color: #001847;
+}
 .navBar {
   max-width: 900px;
   width: 100%;
@@ -43,23 +84,23 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px dodgerblue;
 }
 .navBar .logoText {
   width: 70%;
   height: 70%;
-  border: solid 2px red;
 }
-.navBar .links {
+.navBar .pageLinks {
   padding-top: 2%;
   width: 100%;
   font-size: 3rem;
   display: flex;
-  border: solid 2px green;
   text-align: center;
   justify-content: space-around;
 }
-.navBar .links a {
-  border: solid 2px purple;
+.navBar .pageLinks a {
+  color: #0045f4;
   text-decoration: none;
+}
+.navBar .pageLinks a:hover {
+  color: #001847;
 }

@@ -1,4 +1,29 @@
+.CTA-button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  /* offset-x | offset-y | blur-radius | color */
+  border-radius: 25px;
+}
+.CTA-button a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.CTA-button a:hover {
+  color: #001847;
+}
 .mainImg {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 80%;
   height: 80%;
 }
