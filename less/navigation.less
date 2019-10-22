@@ -1,4 +1,6 @@
 @import "mixins";
+@import "variables";
+@import "global";
 
 .navBar{
     max-width: 900px;
@@ -7,13 +9,35 @@
         margin-top: 2%;
         margin-bottom: 2%;
         .flexCol(@flex: flex; @column: column;);
+        align-items: center;
+        border: solid 2px dodgerblue;
+        
         
 
         .logoText{
             width: 70%;
             height: 70%;
             border: solid 2px red;
+           
 
 
+        }
+
+        .links{
+            padding-top: 2%;
+            width: 100%;
+            font-size: 3rem;
+            display: flex;
+            // color: @brightBlue;
+            border: solid 2px green;
+            text-align: center;
+            justify-content: space-around;
+
+            a{
+                border: solid 2px purple;
+                text-decoration: none;
+            }
+            
+           
         }
 }
