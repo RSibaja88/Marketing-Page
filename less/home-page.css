@@ -1,12 +1,24 @@
 /* offset-x | offset-y | blur-radius | color */
 .CTA-button {
   font-family: 'Big Shoulders Text', cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   width: 15%;
   padding: 1%;
   background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
   box-shadow: -7px 7px 5px #b5c6d1;
   border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .CTA-button {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .CTA-button {
+    width: 23%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 .CTA-button a {
   text-decoration: none;
@@ -34,6 +46,13 @@
   height: 80%;
   border-radius: 15px;
 }
+@media (max-width: 800px) {
+  .mainImg {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 5%;
+  }
+}
 .bottomPanel {
   display: flex;
   flex-direction: row;
@@ -42,6 +61,12 @@
   margin-top: 2%;
   margin-bottom: 2%;
   justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .bottomPanel {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .bottomPanel .textBoxHeader {
   width: 45%;
@@ -53,6 +78,17 @@
   padding-right: 1%;
   justify-content: left;
 }
+@media (max-width: 800px) {
+  .bottomPanel .textBoxHeader {
+    width: 65%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
 .bottomPanel .textBoxHeader .panelHead {
   background-color: #fffa02;
   color: #0045f4;
@@ -61,6 +97,27 @@
   border-radius: 15px;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .bottomPanel .textBoxHeader .panelHead {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}
 .bottomPanel .sideYoga {
   border-radius: 15px;
+}
+@media (max-width: 800px) {
+  .bottomPanel .sideYoga {
+    width: 60%;
+    height: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .bottomPanel .sideYoga {
+    display: none;
+  }
 }

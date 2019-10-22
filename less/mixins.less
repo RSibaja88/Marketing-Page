@@ -12,12 +12,24 @@
 
 .CTA-button {
     font-family: 'Big Shoulders Text', cursive;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     width: 15%;
     padding: 1%;
     background-image: linear-gradient(to bottom right, @yellow , #ffffff);
     box-shadow: @dropShadowL; 
-    border-radius: 25px;
+    border-radius: @roundM;
+
+    @media @tablet {
+        font-size: 1.75rem;
+    }
+
+    @media @cell {
+        width: 23%;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    
 
     a{
         text-decoration: none;
