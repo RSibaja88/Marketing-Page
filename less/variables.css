@@ -1,12 +1,36 @@
 /* offset-x | offset-y | blur-radius | color */
+.flexCent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .CTA-button {
   font-family: 'Big Shoulders Text', cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   width: 15%;
   padding: 1%;
   background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
   box-shadow: -7px 7px 5px #b5c6d1;
   border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .CTA-button {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .CTA-button {
+    width: 23%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 .CTA-button a {
   text-decoration: none;
@@ -15,11 +39,5 @@
 }
 .CTA-button a:hover {
   color: #001847;
-}
-.center {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
 }
 /* offset-x | offset-y | blur-radius | color */

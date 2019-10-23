@@ -1,0 +1,90 @@
+//Yes its a nav sheet, but it's more of a top banner sheet. The name stays though. 
+
+
+@import "mixins";
+@import "variables";
+@import "global";
+
+.container{
+    .center;
+}
+
+.logInButton{
+    .flexRow;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80%;
+    // border: solid 2px orangered;
+    .CTA-button;
+
+    @media @cell {
+        margin-left: 75%;
+        }
+
+    }
+
+
+    .logoSmall{
+        .flexCent;
+        // border: solid 3px green;
+        .center;
+
+    }
+
+    
+.navBarF{
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto; 
+        margin-top: 2%;
+        margin-bottom: 2%;
+        .flexRow(@flex: flex; @row: row;);
+        align-items: center;
+        // border: solid 2px dodgerblue;
+       
+
+        .pageLinks{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 100%;
+            font-size: 3rem;
+            display: flex;
+            // border: solid 2px green;
+            text-align: center;
+            justify-content: space-around;
+
+            @media @tablet {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            @media @cell {
+                font-size: 1.7rem;
+            }
+
+            a{
+                text-decoration: none;
+                // border: solid 2px purple;
+                color: @brightBlue;
+                
+
+                &:hover{
+                    color: @darkBlue;
+                }
+            }
+            
+           
+        }
+}
+
+.backyardCrossfit{
+    .flexCent;
+    .center;
+    border-radius: @roundS;
+    width: 90%;
+    justify-content: center;
+
+    @media @tablet{
+        width: 80%;
+    }
+}

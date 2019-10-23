@@ -1,4 +1,16 @@
 /* offset-x | offset-y | blur-radius | color */
+.flexCent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .CTA-button {
   font-family: 'Big Shoulders Text', cursive;
   font-size: 2.2rem;
@@ -27,12 +39,6 @@
 }
 .CTA-button a:hover {
   color: #001847;
-}
-.center {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -200,6 +206,12 @@ p {
   margin: 0 auto;
   background-image: linear-gradient(to bottom left, #ffffff, #b5c6d1, #ffffff);
 }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .logInButton {
   display: flex;
   flex-direction: row;
@@ -239,22 +251,28 @@ p {
     margin-left: 75%;
   }
 }
-.navBar {
+.logoSmall {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.navBarF {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
-.navBar .logoText {
-  width: 70%;
-  height: 70%;
-}
-.navBar .pageLinks {
-  margin-top: 5%;
+.navBarF .pageLinks {
+  margin-top: 2%;
   margin-bottom: 2%;
   width: 100%;
   font-size: 3rem;
@@ -263,22 +281,66 @@ p {
   justify-content: space-around;
 }
 @media (max-width: 800px) {
-  .navBar .pageLinks {
+  .navBarF .pageLinks {
     font-size: 2rem;
     font-weight: 600;
   }
 }
 @media (max-width: 500px) {
-  .navBar .pageLinks {
+  .navBarF .pageLinks {
     font-size: 1.7rem;
   }
 }
-.navBar .pageLinks a {
-  color: #0045f4;
+.navBarF .pageLinks a {
   text-decoration: none;
+  color: #0045f4;
 }
-.navBar .pageLinks a:hover {
+.navBarF .pageLinks a:hover {
   color: #001847;
+}
+.backyardCrossfit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  width: 90%;
+  justify-content: center;
+}
+.faqCard {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+  background-color: #ffff;
+  padding: 0.5% 8% 8%;
+  border-radius: 15px;
+  box-shadow: -7px 7px 5px #b5c6d1;
+}
+.faqCard h1 {
+  background-color: #0045f4;
+  border-radius: 15px;
+  color: #fffa02;
+  box-shadow: -7px 7px 5px darkgray;
+  width: 85%;
+  padding: 1.25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.faqCard h3 {
+  font-weight: 700;
+  color: #001847;
+  line-height: 50pt;
 }
 .footer {
   margin-top: 10%;
@@ -312,91 +374,4 @@ p {
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
-}
-.mainImg {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 80%;
-  height: 80%;
-  border-radius: 15px;
-}
-@media (max-width: 800px) {
-  .mainImg {
-    width: 70%;
-    height: 70%;
-    margin-bottom: 5%;
-  }
-}
-.bottomPanel {
-  display: flex;
-  flex-direction: row;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  justify-content: space-evenly;
-}
-@media (max-width: 800px) {
-  .bottomPanel {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.bottomPanel .textBoxHeader {
-  width: 45%;
-  font-size: 1rem;
-  background-color: #ffff;
-  border-radius: 15px;
-  box-shadow: 7px 7px 5px #b5c6d1;
-  padding-left: 1%;
-  padding-right: 1%;
-  justify-content: left;
-}
-@media (max-width: 800px) {
-  .bottomPanel .textBoxHeader {
-    width: 65%;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
-.bottomPanel .textBoxHeader .panelHead {
-  background-color: #fffa02;
-  color: #0045f4;
-  box-shadow: -7px 7px 5px #b5c6d1;
-  text-align: center;
-  border-radius: 15px;
-  padding: 2%;
-}
-@media (max-width: 500px) {
-  .bottomPanel .textBoxHeader .panelHead {
-    font-size: 4rem;
-    font-weight: 600;
-  }
-}
-.bottomPanel .sideYoga {
-  border-radius: 15px;
-}
-@media (max-width: 800px) {
-  .bottomPanel .sideYoga {
-    width: 60%;
-    height: 75%;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-}
-@media (max-width: 500px) {
-  .bottomPanel .sideYoga {
-    display: none;
-  }
 }
