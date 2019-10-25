@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+.footer{
+    margin-top: 10%;
+    .flexCol(@flex: flex; @column: column;);
+    
+
+    .storeLinks{
+        justify-content: center;
+        // border: solid 2px darkcyan;
+        .center;
+
+        @media @tablet{
+            width: 10%;
+            .flexRow(@flex: flex; @row: row;);
+            
+        }
+
+        @media @cell{
+            .center;
+            
+        }
+    }
+
+    p{
+        .center;
+    }
+
+}

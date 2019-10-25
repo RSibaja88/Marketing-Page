@@ -1,0 +1,377 @@
+/* offset-x | offset-y | blur-radius | color */
+.flexCent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.CTA-button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.2rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .CTA-button {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .CTA-button {
+    width: 23%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.CTA-button a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.CTA-button a:hover {
+  color: #001847;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Big Shoulders Text', cursive;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.85rem;
+  line-height: 1.4;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #001847;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom left, #ffffff, #b5c6d1, #ffffff);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.logInButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80%;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.2rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .logInButton {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .logInButton {
+    width: 23%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.logInButton a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.logInButton a:hover {
+  color: #001847;
+}
+@media (max-width: 500px) {
+  .logInButton {
+    margin-left: 75%;
+  }
+}
+.logoSmall {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.navBarF {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navBarF .pageLinks {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .navBarF .pageLinks {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .navBarF .pageLinks {
+    font-size: 1.7rem;
+  }
+}
+.navBarF .pageLinks a {
+  text-decoration: none;
+  color: #0045f4;
+}
+.navBarF .pageLinks a:hover {
+  color: #001847;
+}
+.backyardCrossfit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  width: 90%;
+  justify-content: center;
+}
+.faqCard {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+  background-color: #ffff;
+  padding: 0.5% 8% 8%;
+  border-radius: 15px;
+  box-shadow: -7px 7px 5px #b5c6d1;
+}
+.faqCard h1 {
+  background-color: #0045f4;
+  border-radius: 15px;
+  color: #fffa02;
+  box-shadow: -7px 7px 5px darkgray;
+  width: 85%;
+  padding: 1.25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.faqCard h3 {
+  font-weight: 700;
+  color: #001847;
+  line-height: 50pt;
+}
+.footer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .storeLinks {
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .footer .storeLinks {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .footer .storeLinks {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+.footer p {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

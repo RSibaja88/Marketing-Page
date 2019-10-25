@@ -1,0 +1,66 @@
+@import "variables";
+@import "mixins";
+
+
+.faqCard{
+    .center;
+    width: 90%;
+    background-color: @white;
+    padding: .5% 8% 8%;
+    border-radius: @roundS;
+    box-shadow: @dropShadowL;
+
+    @media @tablet{
+        width: 80%;
+    }
+
+    @media @cell{
+        padding: .5% 3% 3%;
+        
+    }
+
+    h1{
+        background-color: @brightBlue;
+        border-radius: @roundS;
+        color: @yellow;
+        box-shadow: @dropShadowLDrk;
+        width: 85%;
+        padding: 1.25%;
+        .flexCent;
+        justify-content: center;
+        .center;
+
+        @media @tablet{
+            font-size: 3.5rem;
+
+        }
+
+        @media @cell{
+            font-size: 2.25rem;
+            padding: 3%;
+            width: 95%;
+        }
+    }
+
+    h3{
+        font-weight: 700;
+        color: @darkBlue;
+        line-height: 50pt;
+
+        @media @tablet{
+        font-size: 2.25rem;
+        }
+
+        @media @cell{
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        
+    }
+
+    p{
+        @media @cell{
+            font-size: 1.45rem;
+        }
+    }
+}

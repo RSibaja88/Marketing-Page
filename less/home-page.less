@@ -1,0 +1,86 @@
+@import "variables";
+@import "mixins";
+
+
+.mainImg{
+    .center;
+    .flexRow(@flex: flex; @row: row;);
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: @roundS;
+    // border: solid 3px green;
+
+    @media @tablet{
+        width: 70%;
+        height: 70%;
+        margin-bottom: 5%;
+    }
+    
+   
+}
+
+.bottomPanel{
+    .flexRow(@flex: flex; @row: row;);
+    .center;
+    justify-content: space-evenly;
+
+    @media @tablet{
+        .flexCol(@flex: flex; @column: column;);
+        
+    }
+
+    .textBoxHeader{
+        width: 45%;
+        font-size: 1rem;
+        background-color: @white;
+        border-radius: @roundS;
+        box-shadow: @dropShadow;
+        padding-left: 1%;
+        padding-right: 1%;
+        justify-content: left;
+
+        @media @tablet{
+            width: 65%;
+            .center;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .panelHead{
+            background-color: @yellow;
+            color: @brightBlue;
+            box-shadow: @dropShadowL;
+            text-align: center;
+            border-radius: @roundS;
+            // width: 105%;            
+            padding: 2%;
+
+            @media @cell{
+                font-size: 4rem;
+                font-weight: 600;
+            }
+
+            }
+    }
+
+    .sideYoga{
+        // border: solid 2px lightsalmon;
+        border-radius: @roundS;
+
+        @media @tablet{
+            width: 60%;
+            height: 75%;
+            .center;
+        }
+
+        @media @cell{
+            display: none;
+        }
+    }
+
+  
+}
+
+
+

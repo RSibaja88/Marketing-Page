@@ -1,0 +1,112 @@
+/* offset-x | offset-y | blur-radius | color */
+.flexCent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.CTA-button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.2rem;
+  width: 15%;
+  padding: 1%;
+  background-image: linear-gradient(to bottom right, #fffa02, #ffffff);
+  box-shadow: -7px 7px 5px #b5c6d1;
+  border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .CTA-button {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .CTA-button {
+    width: 23%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.CTA-button a {
+  text-decoration: none;
+  color: #0045f4;
+  text-align: center;
+}
+.CTA-button a:hover {
+  color: #001847;
+}
+.faqCard {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+  background-color: #ffff;
+  padding: 0.5% 8% 8%;
+  border-radius: 15px;
+  box-shadow: -7px 7px 5px #b5c6d1;
+}
+@media (max-width: 800px) {
+  .faqCard {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .faqCard {
+    padding: 0.5% 3% 3%;
+  }
+}
+.faqCard h1 {
+  background-color: #0045f4;
+  border-radius: 15px;
+  color: #fffa02;
+  box-shadow: -7px 7px 5px darkgray;
+  width: 85%;
+  padding: 1.25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .faqCard h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .faqCard h1 {
+    font-size: 2.25rem;
+    padding: 3%;
+    width: 95%;
+  }
+}
+.faqCard h3 {
+  font-weight: 700;
+  color: #001847;
+  line-height: 50pt;
+}
+@media (max-width: 800px) {
+  .faqCard h3 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .faqCard h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .faqCard p {
+    font-size: 1.45rem;
+  }
+}
